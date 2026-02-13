@@ -42,9 +42,11 @@ elif sukupuoli== "Mies" and 134 <= arvo < 195:
 
 luku = int(input("Anna vuosiluku."))
 
-if luku % 4 == 0:
+if luku % 400 == 0:
+    print("Antamasi vuosiluku on karkausvuosi.")
+elif luku % 100 == 0:
+    print("Antamasi vuosiluku ei ole karkausvuosi.")
+elif luku % 4 == 0:
     print("Antamasi vuosiluku on karkausvuosi.")
 else:
     print("Antamasi vuosiluku ei ole karkausvuosi.")
-
-
