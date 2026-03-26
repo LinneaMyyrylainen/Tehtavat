@@ -12,7 +12,7 @@ lista = []
 
 
 while True:
-    luku = int(input("Anna luku, joka lisätään listaan:"))
+    luku = int(input("Anna luku, joka lisätään listaan (nolla lopettaa ohjelman):"))
 
     if luku == 0:
         print("Hei Hei!")
@@ -59,7 +59,7 @@ suurin = suurin_arvo(luku1, luku2, luku3)
 
 print("Suurin arvo on:", suurin)
 
-#6 tehtävä
+
 
 
 #6 tehtävä
@@ -79,7 +79,7 @@ def jako(a,b):
 
 
 while True:
-    lasku = input("Valitse laskutoimitus (Yhteenlasku, Vähennyslasku, Jakolasku tai Kertolasku), loppu lopettaa ohjelman.")
+    lasku = input("Valitse laskutoimitus (Yhteenlasku, Vähennyslasku, Jakolasku tai Kertolasku), Loppu lopettaa ohjelman.")
 
     if lasku == "Loppu":
         break
