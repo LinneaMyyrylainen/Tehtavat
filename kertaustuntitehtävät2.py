@@ -62,7 +62,7 @@ print("Suurin arvo on:", suurin)
 #6 tehtävä
 
 
-#5 tehtävä
+#6 tehtävä
 
 import math
 
