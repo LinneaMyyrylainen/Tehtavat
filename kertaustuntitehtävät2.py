@@ -83,16 +83,22 @@ while True:
 
     if lasku == "Loppu":
         break
+    if lasku == "Yhteenlasku" or lasku =="Vähennyslasku" or lasku =="Jakolasku" or lasku =="Kertolasku":
+        luku1 = float(input("Anna ensimmäinen luku:"))
+        luku2 = float(input("Anna toinen luku:"))
 
-    luku1 = float(input("Anna ensimmäinen luku:"))
-    luku2 = float(input("Anna toinen luku:"))
+        if lasku == "Yhteenlasku":
+            print("Lukujesi yhteenlaskun tulos on", summa(luku1, luku2))
+        elif lasku == "Vähennyslasku":
+            print("Lukujesi vähennyslaskun tulos on", erotus(luku1, luku2))
+        elif lasku == "Kertolasku":
+            print("Lukujesi kertolaskun tulos on", tulo(luku1, luku2))
+        elif lasku == "Jakolasku":
+            print("Lukujesi jakolaskun tulos on", jako(luku1, luku2))
+    else:
+        print("Virheellinen komento. Anna komento uudestaan.")
 
 
-    if lasku == "Yhteenlasku":
-        print("Lukujesi yhteenlaskun tulos on", summa(luku1, luku2))
-    elif lasku == "Vähennyslasku":
-        print("Lukujesi vähennyslaskun tulos on", erotus(luku1, luku2))
-    elif lasku == "Kertolasku":
-        print("Lukujesi kertolaskun tulos on", tulo(luku1, luku2))
-    elif lasku == "Jakolasku":
-        print("Lukujesi jakolaskun tulos on", jako(luku1, luku2))
+
+
+
